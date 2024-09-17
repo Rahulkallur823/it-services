@@ -1,0 +1,111 @@
+/* Navbar.css */
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-brand a {
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin: 0;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+  border-radius: 5px;
+}
+
+
+/* Analytics.css */
+
+.section-analytics {
+  margin: 9.6rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-analytics .container {
+  background-color: var(--bg-color);
+  border-radius: 1rem;
+  padding: 2.4rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.section-analytics .grid {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: var(--dark-color);
+  text-align: center;
+}
+
+.section-analytics .div1 {
+  border-right: 0.2rem solid var(--dark-color);
+  padding: 2.4rem;
+  flex: 1;
+}
+
+.section-analytics .div1:last-child {
+  border-right: none;
+}
+
+.section-analytics .div1 h2 {
+  font-size: 4.8rem;
+}
+
+.section-analytics .div1 p {
+  font-size: 2.4rem;
+  text-transform: capitalize;
+}
+
+@media (max-width: 998px) {
+  .section-analytics .grid {
+    flex-direction: column;
+  }
+
+  .section-analytics .div1 {
+    border-right: none;
+    border-bottom: 0.2rem solid var(--dark-color);
+  }
+
+  .section-analytics .div1:last-child {
+    border-bottom: none;
+  }
+}
+.error-text {
+  color: red;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
